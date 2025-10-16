@@ -17,14 +17,28 @@ The app showcases how to handle online/offline states, data persistence, and dyn
 
 ## 🧩 Tech Stack
 
-| Tool / Package | Purpose | Explanation |
-|----------------|----------|-------------|
+## Packages & Tools
+
+This project uses several Flutter packages to handle state management, navigation, local storage, network requests, and UI enhancements. Below is a detailed list:
+
+| Package | Purpose | Explanation |
+|---------|---------|-------------|
 | `flutter_bloc` | State management | Provides clean separation of UI and logic using events & states. |
+| `equatable` | State comparison | Simplifies value equality for BLoC state and event classes. |
 | `go_router` | Navigation | Handles routing and navigation declaratively with deep link support. |
 | `shared_preferences` | Local caching | Stores and retrieves locally cached product JSON for offline use. |
 | `connectivity_plus` | Internet detection | Detects online/offline status to decide when to fetch or use cached data. |
-| `flutter_svg` | UI icons | Renders SVG assets used in UI for scalability and performance. |
+| `google_fonts` | Fonts | Allows easy use of Google Fonts in your UI. |
+| `cupertino_icons` | iOS style icons | Provides standard Cupertino icons for iOS-styled widgets. |
+| `http` | API requests | Enables network requests to fetch data from REST APIs. |
+| `json_annotation` | JSON serialization | Provides annotations to generate code for converting JSON to Dart objects. |
+| `json_serializable` | JSON code generation | Works with `build_runner` to automatically generate JSON serialization code. |
+| `build_runner` | Code generation tool | Runs code generators like `json_serializable`. |
+| `flutter_native_splash` | Splash screen | Generates a native splash screen for Android and iOS. |
+| `flutter_lints` | Linting | Provides recommended lint rules for Flutter projects. |
+| `flutter_test` | Testing | Framework for writing unit and widget tests in Flutter. |
 
+> **Note:** All dependencies are defined in `pubspec.yaml`. These packages help maintain clean architecture, improve performance, and simplify development in this project.
 ---
 
 ## 🧠 Architecture Overview
@@ -94,7 +108,7 @@ These adjustments improve maintainability and demonstrate scalable app structure
 
 1. Clone the repository:
    ```bash
-   git clone <your-repo-url>
+   git clone (https://github.com/Clirim1/Product-Collection.git)
    cd product_app
    ```
 
